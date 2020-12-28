@@ -5,7 +5,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `JezDufourq`,
+    title: `Jeremiah Dufourq`,
     description: `Personal portfolio consulting website for Jeremiah Dufourq`,
     author: `@jezdufourq`,
   },
