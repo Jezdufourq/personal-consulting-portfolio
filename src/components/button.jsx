@@ -1,13 +1,11 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { Component, useState } from "react";
 
-export default class button extends Component {
+export default class Button extends Component {
   render() {
     return (
       <div>
-        <button class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 ...">
-          Sign up
-        </button>
+        <button className="bg-lightBlue-600 hover:bg-lightBlue-700 shadow-lg rounded-full px-6 py-3 text-bold uppercase cursor-pointer"></button>
       </div>
     );
   }
