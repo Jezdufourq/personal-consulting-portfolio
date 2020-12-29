@@ -2,6 +2,7 @@ import React from "react";
 
 import SEO from "../components/seo";
 import Header from "../components/header";
+import Greeting from "../components/greeting";
 
 function IndexPage() {
   return (
@@ -17,6 +18,7 @@ function IndexPage() {
         title="Home"
       />
       <Header />
+      <Greeting />
     </div>
   );
 }
