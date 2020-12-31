@@ -3,6 +3,7 @@ import React from "react";
 import SEO from "../components/seo";
 import Header from "../components/header";
 import Greeting from "../components/greeting";
+import Skills from "../components/skills";
 
 function IndexPage() {
   return (
@@ -19,6 +20,7 @@ function IndexPage() {
       />
       <Header />
       <Greeting />
+      <Skills />
     </div>
   );
 }
