@@ -15,19 +15,23 @@ export default class Greeting extends Component {
               className="max-w-4xl max-h-4xl p-4 mx-auto md:my-20 md:p-8 py-8"
               id="greeting"
             >
-              <div className="flex justify-between">
+              <div className="sm:flex flex-wrap">
                 <div className="flex items-center">
-                  <div>
-                    <span className="text-5xl font-serif text-bold text-black tracking-tight">
-                      {greeting.title}
+                  <div className="">
+                    <div className="">
+                      <span className="w-full text-5xl font-serif text-bold text-black tracking-tight">
+                        {greeting.title}
+                      </span>
                       <span className="transition duration-1800 ease-in-out inline-block mx-2">
                         {emoji("👋")}
                       </span>
-                    </span>
-                    <p className="flex flex-wrap">{greeting.subTitle}</p>
+                    </div>
+                    <div className="">
+                      <p className="flex flex-wrap">{greeting.subTitle}</p>
+                    </div>
                   </div>
                 </div>
-                <div className="invisible md:visible max-w-sm max-h-sm">
+                <div className="flex ax-w-sm max-h-sm">
                   <DisplayLottie animationData={landingPerson} />
                 </div>
               </div>
