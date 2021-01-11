@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
-import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks } from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
-import Loading from "../../containers/loading/Loading";
+// import Button from "../../components/button/Button";
+import { openSource } from "../source";
+import Loading from "./loading";
 export default function Projects() {
     const GithubRepoCard = lazy(() =>
         import("./github/GithubRepoCard")
@@ -23,7 +22,7 @@ export default function Projects() {
             request: (operation) => {
                 operation.setContext({
                     headers: {
-                        authorization: `Bearer ${openSource.githubConvertedToken}`,
+                        authorization: `Bearer ${process.env.GATSBY_GITHUB_TOKEN}`,
                     },
                 });
             },
@@ -79,21 +78,15 @@ export default function Projects() {
     if (!(typeof repo === "string" || repo instanceof String) && openSource.display) {
         return (
             <Suspense fallback={renderLoader()}>
-                <div className="main" id="opensource">
-                    <h1 className="project-title">Open Source Projects</h1>
-                    <div className="repo-cards-div-main">
+                <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8" id="projects">
+                    <h1 className="w-full text-5xl font-serif text-bold text-black tracking-tight py-4">Open Source Projects</h1>
+                    <div className="grid grid-cols-3 gap-y-4 gap-x-5">
                         {repo.map((v, i) => {
                             return (
-                                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+                                <GithubRepoCard repo={v} key={v.node.id} />
                             );
                         })}
                     </div>
-                    <Button
-                        text={"More Projects"}
-                        className="project-button"
-                        href={socialMediaLinks.github}
-                        newTab={true}
-                    />
                 </div>
             </Suspense>
         );

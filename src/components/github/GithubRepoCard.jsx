@@ -1,5 +1,4 @@
 import React from "react";
-import "./GithubRepoCard.css";
 import { Fade } from "react-reveal";
 
 export default function GithubRepoCard({ repo }) {
@@ -12,11 +11,11 @@ export default function GithubRepoCard({ repo }) {
         <Fade bottom duration={1000} distance="20px">
             <div>
                 <div
-                    className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
+                    className="shadow-xl rounded-lg p-8 cursor-pointer transform hover:scale-105 ease-in-out"
                     key={repo.node.id}
                     onClick={() => openRepoinNewTab(repo.node.url)}
                 >
-                    <div className="repo-name-div">
+                    <div className="flex items-center">
                         <svg
                             aria-hidden="true"
                             className="octicon"
@@ -24,28 +23,28 @@ export default function GithubRepoCard({ repo }) {
                             role="img"
                             viewBox="0 0 12 16"
                             width="14"
-                            className="repo-svg"
+                            className="mr-2 min-w-16"
                         >
                             <path
                                 fill-rule="evenodd"
                                 d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
                             ></path>
                         </svg>
-                        <p className="repo-name">{repo.node.name}</p>
+                        <p className="flex items-center text-bold">{repo.node.name}</p>
                     </div>
-                    <p className="repo-description">{repo.node.description}</p>
-                    <div className="repo-stats">
-                        <div className="repo-left-stat">
+                    <p className="overflow-hidden">{repo.node.description}</p>
+                    <div className="flex justify-between">
+                        <div className="flex items-center mr-3">
                             {repo.node.primaryLanguage !== null && (
-                                <span>
+                                <span className="flex items-center mr-3">
                                     <div
-                                        className="language-color"
+                                        className="w-2 h-2 mr-1 rounded-full"
                                         style={{ backgroundColor: repo.node.primaryLanguage.color }}
                                     ></div>
                                     <p>{repo.node.primaryLanguage.name}</p>
                                 </span>
                             )}
-                            <span>
+                            <span className="flex items-center mr-3">
                                 <svg
                                     aria-hidden="true"
                                     className="octicon"
@@ -54,7 +53,7 @@ export default function GithubRepoCard({ repo }) {
                                     viewBox="0 0 10 16"
                                     width="12"
                                     fill="rgb(106, 115, 125)"
-                                    className="repo-star-svg"
+                                    className="mr-2 min-w-16"
                                 >
                                     <path
                                         fill-rule="evenodd"
@@ -63,7 +62,7 @@ export default function GithubRepoCard({ repo }) {
                                 </svg>
                                 <p>{repo.node.forkCount}</p>
                             </span>
-                            <span>
+                            <span className="flex items-center mr-3">
                                 <svg
                                     aria-hidden="true"
                                     className="octicon"
@@ -72,7 +71,7 @@ export default function GithubRepoCard({ repo }) {
                                     viewBox="0 0 14 16"
                                     width="14"
                                     fill="rgb(106, 115, 125)"
-                                    className="repo-star-svg"
+                                    className="mr-2 min-w-16"
                                 >
                                     <path
                                         fill-rule="evenodd"
@@ -81,9 +80,6 @@ export default function GithubRepoCard({ repo }) {
                                 </svg>
                                 <p>{repo.node.stargazers.totalCount}</p>
                             </span>
-                        </div>
-                        <div className="repo-right-stat">
-                            <p>{repo.node.diskUsage} KB</p>
                         </div>
                     </div>
                 </div>

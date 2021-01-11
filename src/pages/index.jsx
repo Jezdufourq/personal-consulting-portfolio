@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Greeting from "../components/greeting";
 import Skills from "../components/skills";
 import Cards from "../components/cards";
+import Projects from "../components/projects";
 
 function IndexPage() {
   return (
@@ -21,8 +22,8 @@ function IndexPage() {
       />
       <Header />
       <Greeting />
-      <Skills />
-      <Cards />
+      {/* <Skills /> */}
+      <Projects />
     </div>
   );
 }
