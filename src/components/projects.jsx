@@ -80,7 +80,7 @@ export default function Projects() {
             <Suspense fallback={renderLoader()}>
                 <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8" id="projects">
                     <h1 className="w-full text-5xl font-serif text-bold text-black tracking-tight py-4">Open Source Projects</h1>
-                    <div className="grid grid-cols-3 gap-y-4 gap-x-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-5">
                         {repo.map((v, i) => {
                             return (
                                 <GithubRepoCard repo={v} key={v.node.id} />
