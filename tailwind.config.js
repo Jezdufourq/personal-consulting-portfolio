@@ -4,7 +4,10 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   // https://github.com/tailwindlabs/tailwindcss-forms
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require('@neojp/tailwindcss-line-clamp-utilities')
+  ],
   theme: {
     screens: {
       sm: "480px",
@@ -27,5 +30,6 @@ module.exports = {
     extend: {
       translate: ["motion-reduce"],
     },
+    lineClamp: ['responsive']
   },
 };

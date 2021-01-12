@@ -11,7 +11,7 @@ export default function GithubRepoCard({ repo }) {
         <Fade bottom duration={1000} distance="20px">
             <div>
                 <div
-                    className="shadow-xl rounded-lg p-8 cursor-pointer transform hover:scale-105 ease-in-out"
+                    className="shadow-xl rounded-lg p-8 cursor-pointer transform hover:scale-105 ease-in-out min-w-full min-h-full"
                     key={repo.node.id}
                     onClick={() => openRepoinNewTab(repo.node.url)}
                 >
@@ -30,7 +30,7 @@ export default function GithubRepoCard({ repo }) {
                                 d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
                             ></path>
                         </svg>
-                        <p className="flex items-center font-bold">{repo.node.name}</p>
+                        <p className="flex items-center font-bold overflow-hidden whitespace-wrap overflow-ellipsis mb-3">{repo.node.name}</p>
                     </div>
                     <p className="overflow-hidden">{repo.node.description}</p>
                     <div className="flex justify-between">
