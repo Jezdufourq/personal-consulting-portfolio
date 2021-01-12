@@ -1,12 +1,13 @@
 // See https://tailwindcss.com/docs/configuration for details
 const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   // https://github.com/tailwindlabs/tailwindcss-forms
   plugins: [
     require("@tailwindcss/forms"),
-    require('@neojp/tailwindcss-line-clamp-utilities')
+    require('tailwindcss-pseudo-elements'),
   ],
   theme: {
     screens: {
@@ -29,7 +30,14 @@ module.exports = {
   variants: {
     extend: {
       translate: ["motion-reduce"],
-    },
-    lineClamp: ['responsive']
+      animation: ['hover', 'focus'],
+      textColor: [
+        'responsive',
+        'hover',
+        'focus',
+        'before',
+        'after'
+      ]
+    }
   },
 };

@@ -3,9 +3,8 @@ import React from "react";
 import SEO from "../components/seo";
 import Header from "../components/header";
 import Greeting from "../components/greeting";
-import Skills from "../components/skills";
-import Cards from "../components/cards";
 import Projects from "../components/projects";
+import Button from "../components/button/button";
 
 function IndexPage() {
   return (
@@ -21,6 +20,7 @@ function IndexPage() {
         title="Home"
       />
       <Header />
+      <Button />
       <Greeting />
       {/* <Skills /> */}
       <Projects />

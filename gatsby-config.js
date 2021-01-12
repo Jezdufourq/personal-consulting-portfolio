@@ -11,7 +11,6 @@ module.exports = {
     author: `@jezdufourq`,
   },
   plugins: [
-    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-postcss`,
