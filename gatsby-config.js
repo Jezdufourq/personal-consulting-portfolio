@@ -24,6 +24,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `alfa slab one`,
+          `roboto`
+        ]
+      }
+    },
     `gatsby-plugin-offline`,
   ],
 };

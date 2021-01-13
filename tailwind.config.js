@@ -3,11 +3,12 @@ const colors = require("tailwindcss/colors");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   // https://github.com/tailwindlabs/tailwindcss-forms
   plugins: [
     require("@tailwindcss/forms"),
     require('tailwindcss-pseudo-elements'),
+    require('tailwindcss-textshadow')
   ],
   theme: {
     screens: {
@@ -26,6 +27,9 @@ module.exports = {
       yellow: colors.amber,
       lightBlue: colors.lightBlue,
     },
+    fontFamily: {
+      title: ['Alfa Slab One']
+    }
   },
   variants: {
     extend: {
