@@ -2,11 +2,9 @@ import React from "react";
 
 import SEO from "../components/seo";
 import Header from "../components/header";
-import Greeting from "../components/greeting";
-import Projects from "../components/projects";
-import Button from "../components/button/button";
 import Title from "../components/title/title";
-import Card from "../components/card/card";
+import DisplayLottie from "../components/DisplayLottie";
+import landingPerson from "../assets/lottie/landingPerson.json";
 
 function IndexPage() {
   return (
@@ -22,26 +20,21 @@ function IndexPage() {
         title="Home"
       />
       <Header />
-      <Button />
-      <Title />
-      <Card
-        title="Test"
-        date="10/10/10 - 10/10/10"
-        description="This is a test"
-      />
-      <Card
-        title="Test"
-        date="10/10/10 - 10/10/10"
-        description="This is a test"
-      />
-      <Card
-        title="Test"
-        date="10/10/10 - 10/10/10"
-        description="This is a test"
-      />
-      <Greeting />
-      {/* <Skills /> */}
-      <Projects />
+      <div className="flex flex-wrap overflow-hidden">
+        <div className="w-full py-20 pl-14 pr-4 overflow-hidden content-center md:w-1/2">
+          <div className="col-auto py-4 align-center text-right justify-right">
+            <Title string="Welcome" />
+          </div>
+          <div className="py-2 ml-20 text-right">
+            <span className="font-bold font-sans">
+              My name is Jeremiah, and I am a full stack developer
+            </span>
+          </div>
+        </div>
+        <div className="w-full py-20 pr-14 pl-4 overflow-hidden md:w-1/2">
+          <DisplayLottie className="w-10 h-10" animationData={landingPerson} />
+        </div>
+      </div>
     </div>
   );
 }
