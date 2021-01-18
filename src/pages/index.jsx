@@ -21,7 +21,7 @@ function IndexPage() {
       />
       <Header />
       <div className="flex flex-wrap overflow-hidden">
-        <div className="grid grid-rows-2 place-content-center gap-3 md:w-1/2">
+        <div className="grid grid-rows-2 gap-3 w-full md:w-1/2">
           <div className="col-auto text-right self-end">
             <Title string="Welcome" />
           </div>
@@ -31,8 +31,23 @@ function IndexPage() {
             </span>
           </div>
         </div>
-        <div className="w-full py-20 pr-14 pl-4 overflow-hidden md:w-1/2">
+        <div className="py-20 pr-14 pl-4 overflow-hidden w-full md:w-1/2">
           <DisplayLottie className="w-10 h-10" animationData={landingPerson} />
+        </div>
+      </div>
+      <div className="flex flex-wrap overflow-hidden">
+        <div className="py-20 pl-14 pr-4 overflow-hidden w-full md:w-1/2">
+          column 1
+        </div>
+        <div className="grid grid-rows-2 gap-3 w-full md:w-1/2">
+          <div className="col-auto text-left self-end">
+            <Title string="About Me" />
+          </div>
+          <div className="col-auto mr-20 text-left">
+            <span className="font-bold font-sans">
+              I am a software developer.
+            </span>
+          </div>
         </div>
       </div>
     </div>
