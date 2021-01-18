@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../assets/jeremiah.jpeg";
-export default function card(props) {
+export default function experience(props) {
   return (
     <div className="bg-white shadow-lg max-w-md min-h-md">
       <div className="grid col-auto p-10">
