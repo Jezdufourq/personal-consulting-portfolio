@@ -6,6 +6,7 @@ import Title from "../components/title/title";
 import DisplayLottie from "../components/DisplayLottie";
 import landingPerson from "../assets/lottie/landingPerson.json";
 import heroImg from "../assets/jeremiah.jpeg";
+import TagCloud from "../components/TagCloud/TagCloud";
 
 function IndexPage() {
   return (
@@ -37,12 +38,16 @@ function IndexPage() {
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
-        <div className="py-20 pl-14 pr-4 w-full md:w-1/2">
-          <img
-            src={heroImg}
-            className="w-40 h-40 border-lightBlue-400 border-4"
-            alt="cardAvatar"
-          />
+        <div className="grid grid-rows-1 pr-4 w-full md:w-1/2">
+          <div className="col-auto justify-right place-items-end self-center">
+            <div className="w-full h-full">
+              <img
+                src={heroImg}
+                className="w-full h-full border-lightBlue-400 border-4"
+                alt="cardAvatar"
+              />
+            </div>
+          </div>
         </div>
         <div className="grid grid-rows-2 pl-4 gap-3 w-full md:w-1/2">
           <div className="col-auto text-left self-end">
@@ -61,7 +66,9 @@ function IndexPage() {
             <Title string="My Skills" />
           </div>
         </div>
-        <div className="py-20 pr-14 pl-4 w-full md:w-1/2">column 1</div>
+        <div className="py-20 pr-14 pl-4 w-full md:w-1/2">
+          <TagCloud text={["test", "test1", "test2"]} />
+        </div>
       </div>
     </div>
   );
