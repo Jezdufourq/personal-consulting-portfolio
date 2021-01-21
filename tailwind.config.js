@@ -17,6 +17,12 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+    textColor: {
+      'primary': '#00f0ff'
+    },
+    borderColor: {
+      'primary': '#00f0ff'
+    },
     colors: {
       // Build your palette here
       transparent: "transparent",

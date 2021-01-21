@@ -7,6 +7,8 @@ import DisplayLottie from "../components/DisplayLottie";
 import landingPerson from "../assets/lottie/landingPerson.json";
 import heroImg from "../assets/jeremiah.jpeg";
 import TagCloud from "../components/TagCloud/TagCloud";
+import Button from "../components/button/button";
+import Footer from "../components/footer";
 
 function IndexPage() {
   return (
@@ -40,13 +42,7 @@ function IndexPage() {
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 pr-4 w-full md:w-1/2">
           <div className="col-auto justify-right place-items-end self-center">
-            <div className="w-full h-full">
-              <img
-                src={heroImg}
-                className="w-full h-full border-lightBlue-400 border-4"
-                alt="cardAvatar"
-              />
-            </div>
+            <div className="w-full h-full"></div>
           </div>
         </div>
         <div className="grid grid-rows-2 pl-4 gap-3 w-full md:w-1/2">
@@ -69,6 +65,25 @@ function IndexPage() {
         <div className="py-20 pr-14 pl-4 w-full md:w-1/2">
           <TagCloud text={["test", "test1", "test2"]} />
         </div>
+      </div>
+      <div className="flex flex-wrap overflow-hidden">
+        <div className="mx-80 my-10 grid grid-rows-1 w-full text-center text-4xl text-primary font-title">
+          I love creating solutions to everyday problems.
+        </div>
+      </div>
+      <div className="flex flex-wrap overflow-hidden">
+        <div className="mx-80 my-10 grid grid-rows-1 w-full text-center text-4xl text-primary font-title">
+          Ready to take the next step and work together?
+        </div>
+        <div className="mx-40 grid grid-rows-1 w-full text-center text-4xl text-black font-title">
+          Let's have a chat
+        </div>
+        <div className="grid grid-rows-1 w-full justify-items-center">
+          <Button name="Contact Me" />
+        </div>
+      </div>
+      <div className="flex flex-wrap overflow-hidden place-content-center">
+        <Footer />
       </div>
     </div>
   );
