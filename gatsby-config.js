@@ -11,7 +11,6 @@ module.exports = {
     author: `@jezdufourq`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
@@ -32,7 +31,6 @@ module.exports = {
           `roboto`
         ]
       }
-    },
-    `gatsby-plugin-offline`,
+    }
   ],
 };
