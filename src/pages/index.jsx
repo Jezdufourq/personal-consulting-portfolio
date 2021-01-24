@@ -9,7 +9,7 @@ import heroImg from "../assets/jeremiah.jpeg";
 import TagCloud from "../components/TagCloud/TagCloud";
 import Button from "../components/button/button";
 import Footer from "../components/footer";
-import Socials from "../components/socials";
+// import Socials from "../components/socials";
 
 function IndexPage() {
   return (
@@ -84,7 +84,7 @@ function IndexPage() {
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden place-content-center">
-        <Socials />
+        {/* <Socials /> */}
       </div>
       <div className="flex flex-wrap overflow-hidden place-content-center">
         <Footer />
