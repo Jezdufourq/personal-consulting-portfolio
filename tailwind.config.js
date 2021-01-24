@@ -6,9 +6,7 @@ module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   // https://github.com/tailwindlabs/tailwindcss-forms
   plugins: [
-    require("@tailwindcss/forms"),
-    require('tailwindcss-pseudo-elements'),
-    require('tailwindcss-textshadow')
+    require("@tailwindcss/forms")
   ],
   theme: {
     screens: {
