@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
 import Headroom from "react-headroom";
+import Button from "./button/button";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -17,7 +18,7 @@ function Header() {
   return (
     <Headroom>
       <header>
-        <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
+        <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8 bg-white">
           <Link to="/">
             <h1 className="flex items-center text-white no-underline">
               <span className="text-xl font-serif font-bold tracking-tight">
@@ -62,19 +63,18 @@ function Header() {
                 route: `#projects`,
                 title: `Projects`,
               },
-              {
-                route: `#contact`,
-                title: `Contact`,
-              },
             ].map((link) => (
               <Link
-                className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6 hover:text-lightBlue-500 transform hover:scale-110 motion-reduce:transform-none"
+                className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6 hover:text-primary hover:underline"
                 key={link.title}
                 to={link.route}
               >
                 {link.title}
               </Link>
             ))}
+            <div className="block mt-4 md:inline-block md:mt-0 md:ml-6">
+              <Button name="Contact Me" />
+            </div>
           </nav>
         </div>
       </header>
