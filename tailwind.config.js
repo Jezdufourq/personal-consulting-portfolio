@@ -35,17 +35,4 @@ module.exports = {
       title: ['Alfa Slab One']
     }
   },
-  variants: {
-    extend: {
-      translate: ["motion-reduce"],
-      animation: ['hover', 'focus'],
-      textColor: [
-        'responsive',
-        'hover',
-        'focus',
-        'before',
-        'after'
-      ]
-    }
-  },
 };
