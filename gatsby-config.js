@@ -11,6 +11,7 @@ module.exports = {
     author: `@jezdufourq`,
   },
   plugins: [
+    'gatsby-plugin-fontawesome-css',
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
