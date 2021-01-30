@@ -21,7 +21,7 @@ export default function Home() {
         title="Home"
       />
       <div className="flex flex-wrap overflow-hidden">
-        <div className="h-100 w-full grid grid-rows-2 gap-3 md:pr-4 md:w-1/2">
+        <div className="w-full grid grid-rows-2 gap-3 md:pr-4 md:w-1/2">
           <div className="col-auto self-end text-center md:text-right">
             <Title string="Welcome" />
           </div>
@@ -31,8 +31,8 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="w-full md:py-20 md:pr-14 md:pl-4  md:w-1/2">
-          <DisplayLottie animationData={landingPerson} />
+        <div className="md:py-20 md:pr-14 md:pl-4 md:w-1/2">
+          <DisplayLottie width={300} height={300} animationData={landingPerson} />
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
