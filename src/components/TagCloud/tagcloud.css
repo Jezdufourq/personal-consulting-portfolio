@@ -1,3 +1,5 @@
 .content {
   color: #00f0ff;
+  position: relative;
+  height: 200px;
 }

@@ -22,7 +22,7 @@ export default function Home() {
       />
       <div className="flex flex-wrap overflow-hidden">
         <div className="w-full grid grid-rows-2 gap-3 md:pr-4 md:w-1/2">
-          <div className="col-auto self-end text-center md:text-right">
+          <div className="col-auto self-end text-center mt-20 md:text-right">
             <Title string="Welcome" />
           </div>
           <div className="col-auto text-center md:ml-20 md:text-right">
@@ -60,8 +60,8 @@ export default function Home() {
             <Title string="My Skills" />
           </div>
         </div>
-        <div className="col-auto w-full self-center md:py-20 md:pr-14 md:pl-4 md:w-1/2">
-          <TagCloud text={["test", "test1", "test2"]} />
+        <div className="col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
+          <TagCloud className="place-self-center" text={["test", "test1", "test2"]} />
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">

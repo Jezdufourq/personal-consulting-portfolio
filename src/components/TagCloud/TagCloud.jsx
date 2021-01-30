@@ -13,14 +13,13 @@ export default class TagCloud extends Component {
 
   componentDidMount() {
     const container = ".content";
-    const options = {};
+    const options = {
+      containerClass: "content",
+      useContainerInlineStyles: false,
+    };
     var tagCloud = tagcloud(container, this.props.text, options);
   }
   render() {
-    return (
-      <div>
-        <div className="content" ref="textCloud" />
-      </div>
-    );
+    return <div className="content" ref="textCloud" />;
   }
 }
