@@ -7,7 +7,7 @@ export default function Index({ children }) {
     <div>
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
