@@ -31,23 +31,23 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="md:py-20 md:pr-14 md:pl-4 md:w-1/2">
+        <div className="col-auto w-full justify-items-center md:py-20 md:pr-14 md:pl-4 md:w-1/2">
           <DisplayLottie width={300} height={300} animationData={landingPerson} />
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
-        <div className="grid grid-rows-1 pr-4 w-full md:w-1/2">
+        <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
           <div className="col-auto self-center text-center md:ml-20 md:text-right">
             <span className="font-bold font-sans">
               Image goes here
             </span>
           </div>
         </div>
-        <div className="grid grid-rows-2 pl-4 gap-3 w-full md:w-1/2">
-          <div className="col-auto text-left self-end">
+        <div className="grid grid-rows-2 gap-3 w-full md:pl-4 md:w-1/2">
+          <div className="col-auto text-center self-end md:text-left">
             <Title string="About Me" />
           </div>
-          <div className="col-auto mr-20 text-left">
+          <div className="col-auto text-center md:mr-20 md:text-left">
             <span className="font-bold font-sans">
               I am a software developer.
             </span>
@@ -55,28 +55,34 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
-        <div className="grid grid-rows-1 pr-4 w-full md:w-1/2">
-          <div className="col-auto text-right self-center">
+        <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
+          <div className="col-auto self-center text-center md:text-right">
             <Title string="My Skills" />
           </div>
         </div>
-        <div className="py-20 pr-14 pl-4 w-full md:w-1/2">
+        <div className="col-auto w-full self-center md:py-20 md:pr-14 md:pl-4 md:w-1/2">
           <TagCloud text={["test", "test1", "test2"]} />
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
-        <div className="mx-80 my-10 md:mx-40 grid grid-rows-1 w-full text-center text-4xl text-primary font-title">
-          I love creating solutions to everyday problems.
+        <div className="grid grid-rows-1 w-full justify-items-center my-4">
+          <div className="text-primary font-title text-center text-4xl w-3/4 h-full">
+            I love creating solutions to everyday problems.
+          </div>
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
-        <div className="mx-80 my-10 md:mx-40 grid grid-rows-1 w-full text-center text-4xl text-primary font-title">
-          Ready to take the next step and work together?
+        <div className="grid grid-rows-1 w-full justify-items-center my-4">
+          <div className="text-primary font-title text-center text-4xl w-3/4 h-full">
+            Ready to take the next step and work together?
+          </div>
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
-        <div className="mx-80 grid grid-rows-1 w-full text-center text-4xl font-title md:w-1/2">
-          Let's have a chat
+        <div className="grid grid-rows-1 w-full justify-items-center my-4">
+          <div className="font-title text-center text-4xl">
+            Let's have a chat
+          </div>
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
