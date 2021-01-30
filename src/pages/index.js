@@ -6,6 +6,8 @@ import DisplayLottie from "../components/DisplayLottie";
 import landingPerson from "../assets/lottie/landingPerson.json";
 import TagCloud from "../components/TagCloud/TagCloud";
 import Button from "../components/button/button";
+import Avatar from "../components/avatar/avatar";
+import jeremiahAvatar from "../assets/jeremiah.jpeg";
 
 export default function Home() {
   return (
@@ -31,16 +33,14 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="col-auto w-full justify-items-center md:py-20 md:pr-14 md:pl-4 md:w-1/2">
+        <div className="col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
           <DisplayLottie width={300} height={300} animationData={landingPerson} />
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
           <div className="col-auto self-center text-center md:ml-20 md:text-right">
-            <span className="font-bold font-sans">
-              Image goes here
-            </span>
+            <Avatar src={jeremiahAvatar} alt="Jeremiah"/>
           </div>
         </div>
         <div className="grid grid-rows-2 gap-3 w-full md:pl-4 md:w-1/2">
