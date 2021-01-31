@@ -1,9 +1,8 @@
 import React from "react";
 import Index from "../layouts";
 import SEO from "../components/seo";
-import Form from "../components/form/form";
 
-export default function contact() {
+export default function Success() {
   return (
     <Index>
       <SEO
@@ -14,10 +13,9 @@ export default function contact() {
           `vue`,
           `jezdufourq`,
         ]}
-        title="Contact"
+        title="ThankYou"
       />
-      <Form />
-      <p>This is below the form</p>
+      <p>This is a thank you page</p>
     </Index>
   );
 }
