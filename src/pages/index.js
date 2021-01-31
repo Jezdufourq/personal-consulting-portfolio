@@ -8,8 +8,13 @@ import TagCloud from "../components/TagCloud/TagCloud";
 import Button from "../components/button/button";
 import Avatar from "../components/avatar/avatar";
 import jeremiahAvatar from "../assets/jeremiah.jpeg";
+import {navigate} from "gatsby";
 
 export default function Home() {
+  function contactPage() {
+    navigate('/contact');
+  }
+
   return (
     <Index>
       <SEO
@@ -87,7 +92,7 @@ export default function Home() {
       </div>
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 w-full justify-items-center">
-          <Button name="Contact Me" />
+          <Button name="Contact Me" link="/contact"/>
         </div>
       </div>
     </Index>
