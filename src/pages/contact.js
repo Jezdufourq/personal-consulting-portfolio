@@ -1,7 +1,7 @@
 import React from "react";
 import Index from "../layouts";
 import SEO from "../components/seo";
-import Form from "../components/form/form";
+import ContactForm from "../components/contactForm/contactForm";
 
 export default function contact() {
   return (
@@ -16,7 +16,7 @@ export default function contact() {
         ]}
         title="Contact"
       />
-      <Form />
+      <ContactForm />
       <p>This is below the form</p>
     </Index>
   );

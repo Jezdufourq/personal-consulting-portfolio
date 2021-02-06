@@ -21,6 +21,12 @@ module.exports = {
     borderColor: {
       'primary': '#00f0ff'
     },
+    backgroundColour: {
+      'primary': '#00f0ff'
+    },
+    outline: {
+      primary: ['2px solid #00f0ff']
+    },
     colors: {
       // Build your palette here
       transparent: "transparent",
