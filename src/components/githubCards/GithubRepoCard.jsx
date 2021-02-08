@@ -11,7 +11,7 @@ export default function GithubRepoCard({ repo }) {
     <Fade bottom duration={1000} distance="20px">
       <div>
         <div
-          className="shadow-xl rounded-lg p-8 cursor-pointer transform hover:scale-105 ease-in-out min-w-full min-h-full"
+          className="shadow-md rounded-md p-8 cursor-pointer transform hover:scale-105 ease-in-out min-w-full min-h-full"
           key={repo.node.id}
           onClick={() => openRepoinNewTab(repo.node.url)}
         >
