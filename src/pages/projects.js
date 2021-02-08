@@ -1,7 +1,7 @@
 import React from "react";
 import SEO from "../components/seo";
 import Index from "../layouts";
-import Projects from "../components/projects";
+import Github from "../components/github";
 
 export default function projects() {
   return (
@@ -16,7 +16,7 @@ export default function projects() {
         ]}
         title="Project"
       />
-      <Projects />
+      <Github />
     </Index>
   );
 }
