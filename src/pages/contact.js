@@ -1,11 +1,11 @@
 import React from "react";
-import Index from "../layouts";
+import Content from "../layouts/content";
 import SEO from "../components/seo";
 import ContactForm from "../components/contactForm/contactForm";
 
 export default function contact() {
   return (
-    <Index>
+    <Content>
       <SEO
         keywords={[
           `consulting`,
@@ -17,7 +17,6 @@ export default function contact() {
         title="Contact"
       />
       <ContactForm />
-      <p>This is below the form</p>
-    </Index>
+    </Content>
   );
 }
