@@ -56,11 +56,11 @@ function Header() {
                 title: `Skills`,
               },
               {
-                route: `experience`,
+                route: `/experience`,
                 title: `Experience`,
               },
               {
-                route: `projects`,
+                route: `/projects`,
                 title: `Projects`,
               },
             ].map((link) => (

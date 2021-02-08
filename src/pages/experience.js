@@ -2,7 +2,6 @@ import React from "react";
 import SEO from "../components/seo";
 import Index from "../layouts";
 import Experience from "../components/experienceCards/experience";
-import Date from "react";
 export default function experience() {
   return (
     <Index>
@@ -17,8 +16,8 @@ export default function experience() {
         title="Experience"
       />
       <Experience
-        title="test 1"
-        date={Date.now()}
+        title="Test 1"
+        date="20/02-1999 - 30/03-2010"
         description="This is a test description"
       />
     </Index>
