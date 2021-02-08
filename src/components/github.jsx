@@ -68,11 +68,7 @@ export default function Github() {
     setrepo(array);
   }
   return (
-    <div
-      className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8"
-      id="projects"
-    >
-      <Title string="Open Source Projects" />
+    <div id="projects">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-5 min-w-100 min-h-400">
         {repo.map((v, i) => {
           return <GithubRepoCard repo={v} key={v.node.id} />;

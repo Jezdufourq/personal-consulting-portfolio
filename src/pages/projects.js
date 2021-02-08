@@ -1,11 +1,12 @@
 import React from "react";
 import SEO from "../components/seo";
-import Index from "../layouts";
+import Test from "../layouts/test";
 import Github from "../components/github";
+import Title from "../components/title/title";
 
 export default function projects() {
   return (
-    <Index>
+    <Test>
       <SEO
         keywords={[
           `consulting`,
@@ -16,7 +17,8 @@ export default function projects() {
         ]}
         title="Project"
       />
+      <Title string="Open Source Projects" />
       <Github />
-    </Index>
+    </Test>
   );
 }

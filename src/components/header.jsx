@@ -48,11 +48,11 @@ function Header() {
           >
             {[
               {
-                route: `#about`,
+                route: `/#about`,
                 title: `About`,
               },
               {
-                route: `#skills`,
+                route: `/#skills`,
                 title: `Skills`,
               },
               {
