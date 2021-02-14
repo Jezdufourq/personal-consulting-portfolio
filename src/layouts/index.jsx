@@ -6,8 +6,9 @@ export default function Index({ children }) {
   return (
     <div>
       <Header />
-      {children}
-      {/* <Footer /> */}
+      <div className="flex flex-col flex-wrap items-center max-w-4xl px-8 mx-auto bg-white">
+        {children}
+      </div>
     </div>
   );
 }

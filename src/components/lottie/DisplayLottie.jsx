@@ -11,11 +11,7 @@ export default function DisplayLottie(props) {
 
   return (
     <div onClick="null">
-      <Lottie
-        options={defaultOptions}
-        height={props.height}
-        width={props.width}
-      />
+      <Lottie options={defaultOptions} />
     </div>
   );
 }
