@@ -27,6 +27,16 @@ const workExperience = [
   },
 ];
 
+const skills = [
+  "Javascript",
+  "React",
+  "Vue",
+  "Java",
+  "Docker",
+  "SAP HANA",
+  "Postgres",
+];
+
 const illustration = {
   animated: true, // set to false to use static SVG
 };
@@ -251,6 +261,7 @@ const twitterDetails = {
 };
 
 export {
+  skills,
   illustration,
   greeting,
   socialMediaLinks,

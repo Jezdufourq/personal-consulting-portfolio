@@ -9,6 +9,7 @@ import Button from "../components/button/button";
 import Avatar from "../components/avatar/avatar";
 import jeremiahAvatar from "../assets/jeremiah.jpeg";
 import { navigate } from "gatsby";
+import { skills } from "../source";
 
 export default function Home() {
   function contactPage() {
@@ -70,10 +71,7 @@ export default function Home() {
           </div>
         </div>
         <div className="col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
-          <TagCloud
-            className="place-self-center"
-            text={["test", "test1", "test2"]}
-          />
+          <TagCloud className="place-self-center" text={skills} />
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
