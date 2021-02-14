@@ -14,13 +14,13 @@ module.exports = {
       xl: "1440px",
     },
     textColor: {
-      primary: "#216feb",
+      primary: "#00f0ff",
     },
     borderColor: {
-      primary: "#216feb",
+      primary: "#00f0ff",
     },
     backgroundColour: {
-      primary: "#216feb",
+      primary: "#00f0ff",
     },
     outline: {
       primary: ["2px solid #00f0ff"],
