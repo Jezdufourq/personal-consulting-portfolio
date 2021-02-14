@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
-import GithubRepoCard from "./githubCards/GithubRepoCard";
+import GithubRepoCard from "./githubCard/GithubRepoCard";
 import Title from "./title/title";
 
 import { openSource } from "../source";

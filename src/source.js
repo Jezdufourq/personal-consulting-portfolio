@@ -4,6 +4,16 @@
 
 import emoji from "react-easy-emoji";
 
+// Experiences section
+const workExperience = [
+  {
+    title: "Test 1",
+    image: "link to image",
+    date: "10/02/18 - 10/02/20",
+    description: "This is a description of the experience which I had",
+  },
+];
+
 const illustration = {
   animated: true, // set to false to use static SVG
 };
@@ -241,4 +251,5 @@ export {
   blogSection,
   contactInfo,
   twitterDetails,
+  workExperience,
 };

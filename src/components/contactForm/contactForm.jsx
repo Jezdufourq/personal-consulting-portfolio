@@ -5,7 +5,7 @@ import Button from "../button/button";
 
 export default function ContactForm() {
   return (
-    <div className="bg-white shadow-md rounded-md min-w-full min-h-full max-w-md min-h-md mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900">
+    <div className="bg-white shadow-md rounded-md min-w-full min-h-full max-w-md min-h-md px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900">
       <div className="flex flex-col justify-between">
         <div>
           <Title string="Lets have a chat" />
