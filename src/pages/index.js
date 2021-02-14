@@ -47,10 +47,8 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap overflow-hidden">
           <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
-            <div className="col-auto md:ml-20 md:text-right">
-              <div className="h-40 w-40">
-                <Avatar src={jeremiahAvatar} alt="Jeremiah" />
-              </div>
+            <div className="w-40 h-40">
+              <Avatar src={jeremiahAvatar} alt="Jeremiah" />
             </div>
           </div>
           <div className="grid grid-rows-2 gap-3 w-full md:pl-4 md:w-1/2">
@@ -71,7 +69,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
-            <TagCloud className="place-self-center" text={skills} />
+            <TagCloud text={skills} />
           </div>
         </div>
         <div className="flex flex-wrap overflow-hidden">
