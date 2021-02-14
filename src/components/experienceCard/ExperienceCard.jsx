@@ -7,18 +7,22 @@ import { Fade } from "react-reveal";
 export default function ExperienceCard(props) {
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="bg-white shadow-md rounded-md p-8 cursor-pointer transform hover:scale-103 ease-in-out min-w-full min-h-full max-w-md min-h-md">
-        <div className="grid col-auto p-10">
-          <div className="flex row justify-center">
+      <div className="shadow-md rounded-md p-8 transform hover:scale-105 ease-in-out min-w-full min-h-full">
+        <div className="flex flex-col p-10 sm:p-5">
+          <div className="">
             <Title string={props.title} />
           </div>
-          <div className="grid col-auto justify-center p-8">
-            <Avatar src={props.img} alt="experience1" />
+          <div className="p-8 items-center">
+            {props.img === null ? (
+              <Avatar src={img} alt="default" />
+            ) : (
+              <Avatar src={props.img} alt="experience1" />
+            )}
           </div>
-          <div className="grid col-auto row justify-center pt-1 pb-4">
+          <div className="pt-1 pb-4">
             <span className="font-bold">{props.date}</span>
           </div>
-          <div className="grid col-auto row justify-center">
+          <div className="">
             <span>{props.description}</span>
           </div>
         </div>

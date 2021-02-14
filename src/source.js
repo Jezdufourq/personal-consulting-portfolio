@@ -2,13 +2,26 @@
 
 // Summary And Greeting Section
 
+import { isNonNullType } from "graphql";
 import emoji from "react-easy-emoji";
 
 // Experiences section
 const workExperience = [
   {
     title: "Test 1",
-    image: "link to image",
+    image: null,
+    date: "10/02/18 - 10/02/20",
+    description: "This is a description of the experience which I had",
+  },
+  {
+    title: "Test 1",
+    image: null,
+    date: "10/02/18 - 10/02/20",
+    description: "This is a description of the experience which I had",
+  },
+  {
+    title: "Test 1",
+    image: null,
     date: "10/02/18 - 10/02/20",
     description: "This is a description of the experience which I had",
   },

@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <header className="bg-white">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8 bg-white">
+      <div className="flex flex-wrap items-center justify-between max-w-4xl px-8 pt-8 pb-4 mx-auto bg-white">
         <Link to="/">
           <h1 className="flex items-center text-white no-underline">
             <span className="text-xl font-serif font-bold tracking-tight">
