@@ -41,12 +41,14 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
-            <DisplayLottie animationData={landingPerson} />
+          <div className="flex justify-end col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
+            <div>
+              <DisplayLottie animationData={landingPerson} />
+            </div>
           </div>
         </div>
         <div className="flex flex-wrap overflow-hidden">
-          <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
+          <div className="flex justify-evenly md:justify-end w-full md:pr-4 md:w-1/2">
             <div className="w-40 h-40">
               <Avatar src={jeremiahAvatar} alt="Jeremiah" />
             </div>
@@ -68,7 +70,7 @@ export default function Home() {
               <Title string="My Skills" />
             </div>
           </div>
-          <div className="col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
+          <div className="flex justify-evenly w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
             <TagCloud text={skills} />
           </div>
         </div>

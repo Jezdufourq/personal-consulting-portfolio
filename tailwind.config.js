@@ -5,9 +5,7 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   // https://github.com/tailwindlabs/tailwindcss-forms
-  plugins: [
-    require("@tailwindcss/forms")
-  ],
+  plugins: [require("@tailwindcss/forms")],
   theme: {
     screens: {
       sm: "480px",
@@ -16,16 +14,16 @@ module.exports = {
       xl: "1440px",
     },
     textColor: {
-      'primary': '#00f0ff'
+      primary: "#216feb",
     },
     borderColor: {
-      'primary': '#00f0ff'
+      primary: "#216feb",
     },
     backgroundColour: {
-      'primary': '#00f0ff'
+      primary: "#216feb",
     },
     outline: {
-      primary: ['2px solid #00f0ff']
+      primary: ["2px solid #00f0ff"],
     },
     colors: {
       // Build your palette here
@@ -38,7 +36,7 @@ module.exports = {
       lightBlue: colors.lightBlue,
     },
     fontFamily: {
-      title: ['Alfa Slab One']
-    }
+      title: ["Alfa Slab One"],
+    },
   },
 };

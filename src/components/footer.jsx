@@ -5,7 +5,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 export default function footer() {
   return (
     <footer>
-      <div className="fixed inset-x-0 bottom-0 mt-10 mb-5">
+      <div className="bg-white mt-10 mb-5">
         <div className="text-center grid grid-rows-1 w-full font-bold ">
           Good Design Doesn't Date. Bad Does.
         </div>
