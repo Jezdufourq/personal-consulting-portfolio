@@ -9,9 +9,5 @@ export default function DisplayLottie(props) {
     animationData: animationData,
   };
 
-  return (
-    <div onClick="null">
-      <Lottie options={defaultOptions} />
-    </div>
-  );
+  return <Lottie options={defaultOptions} />;
 }

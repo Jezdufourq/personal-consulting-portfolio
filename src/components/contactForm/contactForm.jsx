@@ -2,7 +2,7 @@ import React from "react";
 import "./contactForm.css";
 import Title from "../title/title";
 import Button from "../button/button";
-import { UndrawDesigner } from "react-undraw-illustrations";
+import { UndrawEnvelope } from "react-undraw-illustrations";
 
 export default function ContactForm() {
   return (
@@ -14,8 +14,8 @@ export default function ContactForm() {
             Hate forms? Send me an <span className="underline">email</span>{" "}
             instead.
           </div>
-          <div>
-            <UndrawDesigner primaryColor="#00f0ff" />
+          <div className="pt-4">
+            <UndrawEnvelope primaryColor="#00f0ff" />
           </div>
         </div>
         <div className="mt-8 text-center"></div>

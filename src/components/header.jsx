@@ -46,7 +46,7 @@ function Header() {
         >
           {[
             {
-              route: `/#about`,
+              route: `/about`,
               title: `About`,
             },
             {

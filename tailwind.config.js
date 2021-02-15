@@ -14,16 +14,16 @@ module.exports = {
       xl: "1440px",
     },
     textColor: {
-      primary: "#00f0ff",
+      primary: "#5692CE",
     },
     borderColor: {
-      primary: "#00f0ff",
+      primary: "#5692CE",
     },
     backgroundColour: {
-      primary: "#00f0ff",
+      primary: "#5692CE",
     },
     outline: {
-      primary: ["2px solid #00f0ff"],
+      primary: ["2px solid #5692CE"],
     },
     colors: {
       // Build your palette here

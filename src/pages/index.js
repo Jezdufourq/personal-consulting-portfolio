@@ -41,10 +41,8 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex justify-end col-auto w-full md:py-20 md:pr-14 md:pl-4 md:w-1/2">
-            <div>
-              <DisplayLottie animationData={landingPerson} />
-            </div>
+          <div className="flex justify-start md:justify-end w-full md:pl-4 md:w-1/2">
+            <DisplayLottie animationData={landingPerson} />
           </div>
         </div>
         <div className="flex flex-wrap overflow-hidden">
