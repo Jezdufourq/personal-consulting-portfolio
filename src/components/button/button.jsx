@@ -1,5 +1,4 @@
 import React from "react";
-import "./button.css";
 import { navigate } from "gatsby";
 
 export default function Button(props) {

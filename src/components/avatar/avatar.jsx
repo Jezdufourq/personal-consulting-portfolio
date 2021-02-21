@@ -1,10 +1,11 @@
 import React from "react";
-import "./avatar.css";
 
 export default function Avatar(props) {
   return (
-    <div className="avatar-class bg-white border-primary border-4 w-full">
-      <img src={props.src} alt={props.alt} className="image" />
-    </div>
+    <img
+      className="shadow-lg rounded-lg max-w-full h-auto align-middle border-none"
+      src={props.src}
+      alt={props.alt}
+    />
   );
 }
