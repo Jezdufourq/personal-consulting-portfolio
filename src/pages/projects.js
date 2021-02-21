@@ -1,7 +1,7 @@
 import React from "react";
 import SEO from "../components/seo";
 import Content from "../layouts/content";
-import Github from "../components/github";
+import ProjectSection from "../components/projectSection/ProjectSection";
 import Title from "../components/title/title";
 
 export default function projects() {
@@ -18,7 +18,7 @@ export default function projects() {
         title="Project"
       />
       <Title string="Open Source Projects" />
-      <Github />
+      <ProjectSection />
     </Content>
   );
 }

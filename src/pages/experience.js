@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "../components/seo";
 import Content from "../layouts/content";
 import Title from "../components/title/title";
-import Experiences from "../components/experiences";
+import ExperienceSection from "../components/experienceSection/ExperienceSection";
 
 export default function experience() {
   return (
@@ -18,7 +18,7 @@ export default function experience() {
         title="Experience"
       />
       <Title string="Experience" />
-      <Experiences />
+      <ExperienceSection />
     </Content>
   );
 }

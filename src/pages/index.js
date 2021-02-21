@@ -15,6 +15,8 @@ import Welcome from "../components/welcomeSection/welcome";
 import AboutMe from "../components/aboutMeSection/AboutMe";
 import MySkills from "../components/mySkillsSection/MySkills";
 import BottomSection from "../components/bottomSection/BottomSection";
+import ExperienceSection from "../components/experienceSection/ExperienceSection";
+import ProjectSection from "../components/projectSection/ProjectSection";
 
 export default function Home() {
   function contactPage() {
@@ -37,6 +39,8 @@ export default function Home() {
         <Welcome />
         <AboutMe />
         <MySkills />
+        <ExperienceSection />
+        <ProjectSection />
         <BottomSection />
       </Fade>
     </Index>

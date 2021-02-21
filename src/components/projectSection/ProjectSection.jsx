@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
-import GithubRepoCard from "./githubCard/GithubRepoCard";
-import Title from "./title/title";
+import GithubRepoCard from "../githubCard/GithubRepoCard";
+import { openSource } from "../../source";
 
-import { openSource } from "../source";
-export default function Github() {
+export default function ProjectSection() {
   const [repo, setrepo] = useState([]);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ export default function Github() {
         query: gql`
           {
           user(login: "${openSource.githubUserName}") {
-            pinnedItems(first: 6, types: [REPOSITORY]) {
+            pinnedItems(first: 3, types: [REPOSITORY]) {
               totalCount
               edges {
                 node {
@@ -69,6 +68,9 @@ export default function Github() {
   }
   return (
     <div id="projects">
+      <div className="text-center my-5">
+        <span className="font-title text-5xl">My Projects</span>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-5 min-w-100 min-h-400">
         {repo.map((v, i) => {
           return <GithubRepoCard repo={v} key={v.node.id} />;
