@@ -11,6 +11,8 @@ import jeremiahAvatar from "../assets/jeremiah.jpeg";
 import { navigate } from "gatsby";
 import { skills } from "../source";
 import { Fade } from "react-reveal";
+import Welcome from "../components/welcomeSection/welcome";
+import AboutMe from "../components/aboutMeSection/AboutMe";
 
 export default function Home() {
   function contactPage() {
@@ -30,38 +32,8 @@ export default function Home() {
           ]}
           title="Home"
         />
-        <div className="flex flex-wrap overflow-hidden">
-          <div className="w-full grid grid-rows-2 gap-3 md:pr-4 md:w-1/2">
-            <div className="col-auto self-end text-center mt-20 md:text-right">
-              <Title string="Welcome" />
-            </div>
-            <div className="col-auto text-center md:ml-20 md:text-right">
-              <span className="font-bold font-sans">
-                My name is Jeremiah, and I am a full stack developer
-              </span>
-            </div>
-          </div>
-          <div className="flex justify-start md:justify-end w-full md:pl-4 md:w-1/2">
-            <DisplayLottie animationData={landingPerson} />
-          </div>
-        </div>
-        <div className="flex flex-wrap overflow-hidden">
-          <div className="flex justify-evenly md:justify-end w-full md:pr-4 md:w-1/2">
-            <div className="w-40 h-40">
-              <Avatar src={jeremiahAvatar} alt="Jeremiah" />
-            </div>
-          </div>
-          <div className="grid grid-rows-2 gap-3 w-full md:pl-4 md:w-1/2">
-            <div className="col-auto text-center self-end md:text-left">
-              <Title string="About Me" />
-            </div>
-            <div className="col-auto text-center md:mr-20 md:text-left">
-              <span className="font-bold font-sans">
-                I am a software developer.
-              </span>
-            </div>
-          </div>
-        </div>
+        <Welcome />
+        <AboutMe />
         <div className="flex flex-wrap overflow-hidden">
           <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
             <div className="col-auto self-center text-center md:text-right">

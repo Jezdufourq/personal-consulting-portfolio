@@ -9,5 +9,11 @@ export default function DisplayLottie(props) {
     animationData: animationData,
   };
 
-  return <Lottie options={defaultOptions} />;
+  return (
+    <Lottie
+      options={defaultOptions}
+      height={props.height}
+      width={props.width}
+    />
+  );
 }
