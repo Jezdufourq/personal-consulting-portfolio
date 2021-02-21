@@ -9,13 +9,13 @@ export default function ContactForm() {
     <div className="bg-white shadow-md rounded-md min-w-full min-h-full max-w-md min-h-md px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900">
       <div className="flex flex-col justify-between">
         <div>
-          <Title string="Lets have a chat" />
+          <span className="font-title text-5xl">Let's have a chat</span>
           <div className="mt-8 text-xl font-sans font-bold">
             Hate forms? Send me an <span className="underline">email</span>{" "}
-            instead.
+            instead. If you are looking for my Resume, please inquire below.
           </div>
           <div className="pt-4">
-            <UndrawEnvelope primaryColor="#00f0ff" />
+            <UndrawEnvelope primaryColor="#2563EB" />
           </div>
         </div>
         <div className="mt-8 text-center"></div>
@@ -42,7 +42,7 @@ export default function ContactForm() {
           <span className="uppercase text-s font-sans font-bold">Message</span>
           <textarea className="w-full h-32 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"></textarea>
         </div>
-        <div className="mt-8">
+        <div className="flex mt-8 justify-end">
           <Button name="Send Message" />
         </div>
       </div>

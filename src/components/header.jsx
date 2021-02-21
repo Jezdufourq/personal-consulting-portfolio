@@ -18,7 +18,7 @@ function Header() {
     <header className="bg-white">
       <div className="flex flex-wrap items-center justify-between max-w-4xl px-8 pt-8 pb-4 mx-auto bg-white">
         <Link to="/">
-          <h1 className="flex items-center text-white no-underline">
+          <h1 className="flex items-center text-black no-underline">
             <span className="text-xl font-serif font-bold tracking-tight">
               {site.siteMetadata.title}
             </span>
@@ -26,7 +26,7 @@ function Header() {
         </Link>
 
         <button
-          className="items-center block px-3 py-2 text-white border-white rounded md:hidden"
+          className="items-center block px-3 py-2 text-black border-white rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -63,7 +63,7 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6 hover:text-primary"
+              className="block mt-4 text-black no-underline md:inline-block md:mt-0 md:ml-6 hover:text-primary"
               key={link.title}
               to={link.route}
             >

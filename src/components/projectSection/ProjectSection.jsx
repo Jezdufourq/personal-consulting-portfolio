@@ -67,7 +67,7 @@ export default function ProjectSection() {
     setrepo(array);
   }
   return (
-    <div id="projects">
+    <div id="projects" className="my-5">
       <div className="text-center my-5">
         <span className="font-title text-5xl">My Projects</span>
       </div>

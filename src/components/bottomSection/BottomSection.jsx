@@ -6,14 +6,14 @@ export default function BottomSection() {
     <div>
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 w-full justify-items-center my-4">
-          <div className="text-primary font-title text-center text-4xl w-3/4 h-full">
+          <div className="text-primary font-title text-center text-4xl w-3/4 h-full text-blue-600">
             I love creating solutions to everyday problems.
           </div>
         </div>
       </div>
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 w-full justify-items-center my-4">
-          <div className="text-primary font-title text-center text-4xl w-3/4 h-full">
+          <div className="text-primary font-title text-center text-4xl w-3/4 h-full text-blue-600">
             Ready to take the next step and work together?
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function BottomSection() {
       </div>
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 w-full justify-items-center">
-          <Button name="Contact Me" link="/contact" />
+          <Button className="text-white" name="Contact Me" link="/contact" />
         </div>
       </div>
     </div>
