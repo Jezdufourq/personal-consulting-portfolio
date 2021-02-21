@@ -6,13 +6,13 @@ export default function Button(props) {
     navigate(link);
   }
   return (
-    <div>
-      <button
-        className="button-class border-4 border-primary text-primary uppercase"
-        onClick={() => submitButton(props.link)}
-      >
-        {props.name}
-      </button>
-    </div>
+    <button
+      onClick={() => submitButton(props.link)}
+      className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+      type="button"
+      style={{ transition: "all .15s ease" }}
+    >
+      {props.name}
+    </button>
   );
 }
