@@ -13,12 +13,12 @@ export default function MySkills() {
   ];
   return (
     <div id="skills">
-      <div className="flex flex-wrap overflow-hidden my-4">
-        <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
-          <div className="col-auto text-center self-end md:text-right">
+      <div className="flex flex-wrap overflow-hidden my-10">
+        <div className="flex flex-wrap w-full md:pr-4 md:w-1/2">
+          <div className="flex-auto col-auto text-center self-end md:text-right">
             <span className="font-title text-5xl">My Skills</span>
           </div>
-          <div className="col-auto text-center md:ml-20 md:text-right">
+          <div className="flex-auto col-auto text-center md:ml-20 md:text-right">
             <span className="font-bold font-sans">
               I am proficient in Java, Vue, Quasar and SQL (specifically SAP
               HANA). I have also completed projects which use Docker, Postgres,

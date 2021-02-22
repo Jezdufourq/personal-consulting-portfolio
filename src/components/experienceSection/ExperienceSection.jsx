@@ -26,7 +26,7 @@ export default function ExperienceSection() {
     },
   ];
   return (
-    <div id="experience" className="my-5">
+    <div id="experience" className="my-10">
       <div className="text-center my-5">
         <span className="font-title text-5xl">My Experience</span>
       </div>

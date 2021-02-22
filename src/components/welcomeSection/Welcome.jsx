@@ -6,13 +6,13 @@ import Button from "../button/button";
 export default function Welcome() {
   return (
     <div>
-      <div className="flex flex-wrap mt-20">
-        <div className="flex-auto grid grid-rows-2 gap-3 md:pr-4 md:w-1/2">
-          <div className="col-auto self-end text-center md:text-right">
+      <div className="flex flex-wrap overflow-hidden mb-10 mt-32">
+        <div className="flex flex-wrap w-full md:pl-4 md:w-1/2">
+          <div className="flex-auto col-auto self-end text-center md:text-right">
             <span className="font-title text-5xl">Hi, </span>
             <span className="font-title text-5xl">Welcome</span>
           </div>
-          <div className="col-auto text-center md:ml-20 md:text-right">
+          <div className="flex-auto col-auto text-center md:ml-20 md:text-right">
             <span className="font-bold font-sans">
               My name is Jeremiah, and I am a full stack developer
             </span>
