@@ -1,6 +1,8 @@
 import React from "react";
 import DisplayLottie from "../lottie/DisplayLottie";
 import landingPerson from "../../assets/lottie/landingPerson.json";
+import SocialIcons from "../socialIcons/SocialIcons";
+import Button from "../button/button";
 export default function Welcome() {
   return (
     <div>
@@ -14,6 +16,17 @@ export default function Welcome() {
             <span className="font-bold font-sans">
               My name is Jeremiah, and I am a full stack developer
             </span>
+            <div className="my-5">
+              <SocialIcons />
+            </div>
+            <div className="my-5">
+              <Button
+                className="text-white"
+                name="Contact Me"
+                link="/contact"
+                type="button"
+              />
+            </div>
           </div>
         </div>
         <div className="flex-auto justify-start sm:justify-end mr-8 sm:mr-0 md:w-1/2 h-200 md:w-400 md:h-400">

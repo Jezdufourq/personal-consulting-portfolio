@@ -1,10 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedinIn,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import SocialIcons from "../components/socialIcons/SocialIcons";
 
 export default function footer() {
   return (
@@ -17,23 +12,7 @@ export default function footer() {
           Built with Gatsby. Jeremiah Dufourq 2021. MIT License.
         </div>
         <div className="flex justify-center w-full">
-          <div className="justify-center">
-            <FontAwesomeIcon
-              className="mx-1 hover:text-blue-600"
-              size="1x"
-              icon={faTwitter}
-            />
-            <FontAwesomeIcon
-              className="mx-1 hover:text-blue-600"
-              size="1x"
-              icon={faInstagram}
-            />
-            <FontAwesomeIcon
-              icon={faLinkedinIn}
-              size="1x"
-              className="mx-1 hover:text-blue-600"
-            />
-          </div>
+          <SocialIcons />
         </div>
       </div>
     </footer>
