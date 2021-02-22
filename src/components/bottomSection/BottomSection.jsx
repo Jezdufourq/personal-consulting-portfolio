@@ -27,7 +27,12 @@ export default function BottomSection() {
       </div>
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 w-full justify-items-center">
-          <Button className="text-white" name="Contact Me" link="/contact" />
+          <Button
+            className="text-white"
+            name="Contact Me"
+            link="/contact"
+            type="button"
+          />
         </div>
       </div>
     </div>

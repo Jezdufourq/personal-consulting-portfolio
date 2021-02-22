@@ -33,8 +33,8 @@ export default function GithubRepoCard({ repo }) {
             {repo.node.name}
           </p>
         </div>
-        <div className="whitespace-nowrap">
-          <p className="overflow-ellipsis overflow-hidden">
+        <div className="">
+          <p className="overflow-ellipsis overflow-hidden h-20">
             {repo.node.description}
           </p>
         </div>

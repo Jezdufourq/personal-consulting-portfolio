@@ -1,8 +1,16 @@
 import React from "react";
 import TagCloud from "../TagCloud/TagCloud";
-import { skills } from "../../source";
 
 export default function MySkills() {
+  const skills = [
+    "Javascript",
+    "React",
+    "Vue",
+    "Java",
+    "Docker",
+    "SAP HANA",
+    "Postgres",
+  ];
   return (
     <div>
       <div className="flex flex-wrap overflow-hidden my-4">

@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
 import Button from "./button/button";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -46,32 +47,32 @@ function Header() {
         >
           {[
             {
-              route: `/about`,
+              route: "#about",
               title: `About`,
             },
             {
-              route: `/experience`,
+              route: `#experience`,
               title: `Experience`,
             },
             {
-              route: `/projects`,
+              route: `#projects`,
               title: `Projects`,
             },
             {
-              route: `/blog`,
+              route: `#bottom`,
               title: `Blog`,
             },
           ].map((link) => (
-            <Link
+            <AnchorLink
               className="block mt-4 text-black no-underline md:inline-block md:mt-0 md:ml-6 hover:text-blue-600"
               key={link.title}
               to={link.route}
             >
               {link.title}
-            </Link>
+            </AnchorLink>
           ))}
           <div className="block mt-4 md:inline-block md:mt-0 md:ml-6">
-            <Button name="Contact Me" link="/contact" />
+            <Button name="Contact Me" link="/contact" type="button" />
           </div>
         </nav>
       </div>

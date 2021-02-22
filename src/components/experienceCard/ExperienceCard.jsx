@@ -8,8 +8,8 @@ export default function ExperienceCard(props) {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="shadow-md rounded-md p-8 transform hover:scale-105 ease-in-out min-w-full min-h-full">
-        <div className="flex flex-col p-10 sm:p-5">
-          <span className="font-title text-5xl">{props.title}</span>
+        <div className="flex flex-col sm:p-5">
+          <span className="font-title text-3xl text-center">{props.title}</span>
           <div className="p-8 items-center">
             {props.img === null ? (
               <Avatar src={img} alt="default" />
