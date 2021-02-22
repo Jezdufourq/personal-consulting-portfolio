@@ -19,7 +19,6 @@ export default function footer() {
             key="Website"
             to="/website"
           >
-            {" "}
             here
           </Link>
         </div>

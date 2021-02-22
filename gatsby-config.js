@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-offline`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
@@ -24,6 +25,13 @@ module.exports = {
       options: {
         offset: -50,
         duration: 1000,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
       },
     },
   ],
