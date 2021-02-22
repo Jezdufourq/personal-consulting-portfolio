@@ -3,7 +3,7 @@ import Button from "../button/button";
 
 export default function BottomSection() {
   return (
-    <div>
+    <div id="bottom">
       <div className="flex flex-wrap overflow-hidden">
         <div className="grid grid-rows-1 w-full justify-items-center my-4">
           <div className="text-primary font-title text-center text-4xl w-3/4 h-full text-blue-600">

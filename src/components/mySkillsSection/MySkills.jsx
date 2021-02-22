@@ -12,7 +12,7 @@ export default function MySkills() {
     "Postgres",
   ];
   return (
-    <div>
+    <div id="skills">
       <div className="flex flex-wrap overflow-hidden my-4">
         <div className="grid grid-rows-1 w-full md:pr-4 md:w-1/2">
           <div className="col-auto text-center self-end md:text-right">

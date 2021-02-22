@@ -6,7 +6,7 @@ export default function ExperienceSection() {
     {
       title: "SAP",
       description:
-        "Currently building an internal web application in Java, SAP HANA, Vue and Quasar hosted on SAP Cloud Platform. Main highlights are migration from monolithic application to a service multitenant architecture",
+        "Currently building an internal web application in Java, SAP HANA, Vue and Quasar hosted on SAP Cloud Platform. Main highlights are migration from monolithic application to a service multitenant architecture.",
       date: "February, 2020 - Current",
       img: require("../../assets/images/sap.png"),
     },
@@ -26,7 +26,7 @@ export default function ExperienceSection() {
     },
   ];
   return (
-    <div id="experiences" className="my-5">
+    <div id="experience" className="my-5">
       <div className="text-center my-5">
         <span className="font-title text-5xl">My Experience</span>
       </div>

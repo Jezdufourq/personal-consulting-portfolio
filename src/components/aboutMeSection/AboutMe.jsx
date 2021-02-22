@@ -4,7 +4,7 @@ import jeremiahAvatar from "../../assets/jeremiah.jpeg";
 
 export default function AboutMe() {
   return (
-    <div>
+    <div id="about">
       <div className="flex flex-wrap overflow-hidden">
         <div className="flex justify-center items-center md:justify-end w-full md:pr-4 md:w-1/2 my-5">
           <div className="w-40 h-40">

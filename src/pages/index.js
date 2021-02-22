@@ -24,11 +24,11 @@ export default function Home() {
           title="Home"
         />
         <Welcome />
-        <AboutMe id="about" />
-        <MySkills id="skills" />
-        <ExperienceSection id="experience" />
-        <ProjectSection id="projects" />
-        <BottomSection id="bottom" />
+        <AboutMe />
+        <MySkills />
+        <ExperienceSection />
+        <ProjectSection />
+        <BottomSection />
       </Fade>
     </Index>
   );
