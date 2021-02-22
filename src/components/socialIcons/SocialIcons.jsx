@@ -9,26 +9,34 @@ import {
 export default function SocialIcons() {
   return (
     <div className="justify-center">
-      <FontAwesomeIcon
-        className="mx-1 hover:text-blue-600"
-        size="1x"
-        icon={faTwitter}
-      />
-      <FontAwesomeIcon
-        icon={faGithub}
-        size="1x"
-        className="mx-1 hover:text-blue-600"
-      />
-      <FontAwesomeIcon
-        className="mx-1 hover:text-blue-600"
-        size="1x"
-        icon={faInstagram}
-      />
-      <FontAwesomeIcon
-        icon={faLinkedinIn}
-        size="1x"
-        className="mx-1 hover:text-blue-600"
-      />
+      <a href="https://twitter.com/Jezdufourq">
+        <FontAwesomeIcon
+          className="mx-1 hover:text-blue-600"
+          size="lg"
+          icon={faTwitter}
+        />
+      </a>
+      <a href="https://github.com/Jezdufourq">
+        <FontAwesomeIcon
+          icon={faGithub}
+          size="lg"
+          className="mx-1 hover:text-blue-600"
+        />
+      </a>
+      <a href="https://www.instagram.com/jezdufourq/">
+        <FontAwesomeIcon
+          className="mx-1 hover:text-blue-600"
+          size="lg"
+          icon={faInstagram}
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/jeremiah-d-0a0b86133/">
+        <FontAwesomeIcon
+          icon={faLinkedinIn}
+          size="lg"
+          className="mx-1 hover:text-blue-600"
+        />
+      </a>
     </div>
   );
 }
