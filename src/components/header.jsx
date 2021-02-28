@@ -58,6 +58,10 @@ function Header() {
               route: `/#projects`,
               title: `Projects`,
             },
+            {
+              route: `/blogs`,
+              title: `Blogs`,
+            },
           ].map((link) => (
             <AnchorLink
               className="block mt-4 text-black no-underline md:inline-block md:mt-0 md:ml-6 hover:text-blue-600"
