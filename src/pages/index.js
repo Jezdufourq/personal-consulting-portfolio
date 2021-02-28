@@ -8,6 +8,7 @@ import MySkills from "../components/mySkillsSection/MySkills";
 import BottomSection from "../components/bottomSection/BottomSection";
 import ExperienceSection from "../components/experienceSection/ExperienceSection";
 import ProjectSection from "../components/projectSection/ProjectSection";
+import BlogSection from "../components/blogSection/BlogSection";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <MySkills />
         <ExperienceSection />
         <ProjectSection />
+        <BlogSection class="text-center my-5" />
         <BottomSection />
       </Fade>
     </Index>
