@@ -1,31 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import SEO from "../seo";
 import BlogCard from "../blogCard/BlogCard";
+import { graphql } from "gatsby";
 
-export default function BlogSection(props) {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    setBlogs([
-      {
-        id: 0,
-        title: "Blog 1",
-        description:
-          "This is a very cool blog post, and this is the first blog post",
-        tags: [
-          {
-            id: 0,
-            name: "business",
-          },
-          {
-            id: 1,
-            name: "travel",
-          },
-        ],
-        date: "2nd Feb, 2021",
-      },
-    ]);
-  }, []);
+export default function BlogSection({ data, location }) {
+  const blogs = data.allMarkdownRemark.nodes;
 
   return (
     <div id="blogs" className="my-10">
@@ -49,20 +28,40 @@ export default function BlogSection(props) {
           This section outlines some of the blog articles which I have written.
         </span>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-5 min-w-100 min-h-400">
-        {blogs.map((blog) => {
-          return (
-            <BlogCard
-              key={blog.id}
-              id={blog.id}
-              description={blog.description}
-              title={blog.title}
-              tag={blog.tags}
-              date={blog.date}
-            />
-          );
-        })}
-      </div>
+      {blogs.length === 0 ? (
+        <span className="text-title font-bold">
+          There are no blog posts to be found.
+        </span>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-5 min-w-100 min-h-400">
+          {blogs.map((blog) => {
+            const title = post.frontmatter.title || post.fields.slug;
+            return (
+              <BlogCard
+                key={blog.id}
+                id={blog.id}
+                description={blog.description}
+                title={title}
+                tag={blog.tags}
+                date={blog.formatter.date}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
+
+export const pageQuery = graphql`
+  query MyQuery {
+    markdownRemark {
+      frontmatter {
+        categories
+        date
+        description
+        title
+      }
+    }
+  }
+`;
