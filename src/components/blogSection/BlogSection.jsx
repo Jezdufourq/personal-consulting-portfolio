@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SEO from "../seo";
 import BlogCard from "../blogCard/BlogCard";
-import { graphql } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 
 export default function BlogSection({ data, location }) {
-  const blogs = data.allMarkdownRemark.nodes;
+  const blogs = data.allMarkdownRemark;
 
-  return (
+  useEffect(() => {
+    console.log(blogs);
+  });
+  render(
     <div id="blogs" className="my-10">
       <SEO
         keywords={[
