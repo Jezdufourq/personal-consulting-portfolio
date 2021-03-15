@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
+import { graphql } from "gatsby";
 import SEO from "../seo";
 import BlogCard from "../blogCard/BlogCard";
-import { StaticQuery, graphql } from "gatsby";
+import { useBlogQuery } from "../../hooks/useBlogQuery";
 
-export default function BlogSection({ data, location }) {
-  const blogs = data.allMarkdownRemark;
+export default function BlogSection({ data }, props) {
+  const blogDataArr = useBlogQuery();
 
   useEffect(() => {
-    console.log(blogs);
+    console.log(blogDataArr);
+    console.log(blogDataArr.length);
   });
-  render(
+  return (
     <div id="blogs" className="my-10">
       <SEO
         keywords={[
@@ -31,22 +33,27 @@ export default function BlogSection({ data, location }) {
           This section outlines some of the blog articles which I have written.
         </span>
       </div>
-      {blogs.length === 0 ? (
+      {blogDataArr.length == 0 ? (
         <span className="text-title font-bold">
           There are no blog posts to be found.
         </span>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-5 min-w-100 min-h-400">
-          {blogs.map((blog) => {
-            const title = post.frontmatter.title || post.fields.slug;
+          {blogDataArr.map((blog) => {
+            const {
+              description,
+              title,
+              date,
+              categories,
+            } = blog.node.frontmatter;
             return (
               <BlogCard
-                key={blog.id}
-                id={blog.id}
-                description={blog.description}
+                key={blog.node.id}
+                id={blog.node.id}
+                description={description}
                 title={title}
-                tag={blog.tags}
-                date={blog.formatter.date}
+                date={date}
+                categories={categories}
               />
             );
           })}
@@ -55,16 +62,3 @@ export default function BlogSection({ data, location }) {
     </div>
   );
 }
-
-export const pageQuery = graphql`
-  query MyQuery {
-    markdownRemark {
-      frontmatter {
-        categories
-        date
-        description
-        title
-      }
-    }
-  }
-`;

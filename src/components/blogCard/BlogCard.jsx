@@ -27,13 +27,13 @@ export default function blogCard(props) {
             {props.date}
           </div>
           <div className="my-2">
-            {props.tag.map((tag) => {
+            {props.categories.map((category) => {
               return (
                 <span
                   className="bg-blue-600 rounded-full px-3 py-1 font-semibold text-white mr-2"
-                  key={tag.id}
+                  key={category}
                 >
-                  {tag.name}
+                  {category}
                 </span>
               );
             })}

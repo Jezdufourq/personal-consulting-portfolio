@@ -53,7 +53,6 @@ export default function ProjectSection() {
       })
       .then((result) => {
         setrepoFunction(result.data.user.pinnedItems.edges);
-        console.log(result);
       })
       .catch(function (error) {
         console.log(error);

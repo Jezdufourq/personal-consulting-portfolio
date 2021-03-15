@@ -1,17 +1,22 @@
 import { useStaticQuery, graphql } from "gatsby";
 
 export const useBlogQuery = () => {
-  const blogListData = useStaticQuery(graphql`
+  const { allMarkdownRemark } = useStaticQuery(graphql`
     query MyQuery {
-      markdownRemark {
-        frontmatter {
-          categories
-          date
-          description
-          title
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              date
+              description
+              categories
+            }
+          }
         }
       }
     }
   `);
-  return blogListData;
+  return allMarkdownRemark.edges;
 };
