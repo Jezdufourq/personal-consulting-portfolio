@@ -9,6 +9,7 @@ export default function ExperienceSection() {
         "Currently building an internal web application in Java, SAP HANA, Vue and Quasar hosted on SAP Cloud Platform. Main highlights are migration from monolithic application to a service multitenant architecture.",
       date: "February, 2020 - Current",
       img: require("../../assets/images/sap.png"),
+      url: "https://www.sap.com/index.html",
     },
     {
       title: "NOJA Power",
@@ -16,6 +17,7 @@ export default function ExperienceSection() {
         "Had experience as an Engineering cadet, rotating through R&D, Production Engineering and Q&A. Main highlights were building an automation testing suite using Python and C# and developing prototypes of a web application.",
       date: "January, 2017 - January, 2021",
       img: require("../../assets/images/noja.png"),
+      url: "https://www.nojapower.com.au/",
     },
     {
       title: "QUT",
@@ -23,6 +25,7 @@ export default function ExperienceSection() {
         "Currently enrolled as a Final Year Student, studying a Bachelor of Engineering (Honours) majoring in Computer and Software Systems. Main highlights are Vice Chancellor Scholarship recipient and current QUT Deans Scholar. I am currently volunteering with the Deans Scholars within the SEADS committee.",
       date: "February 2017 - Current",
       img: require("../../assets/images/qut.jpg"),
+      url: "https://www.qut.edu.au/",
     },
   ];
   return (
@@ -45,6 +48,7 @@ export default function ExperienceSection() {
               img={v.img}
               date={v.date}
               description={v.description}
+              url={v.url}
             />
           );
         })}

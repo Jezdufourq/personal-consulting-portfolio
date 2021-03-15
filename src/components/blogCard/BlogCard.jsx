@@ -8,7 +8,7 @@ export default function blogCard(props) {
   return (
     <div>
       <div
-        className="shadow-xl rounded-lg p-8 cursor-pointer transform hover:scale-105 ease-in-out min-w-full min-h-full"
+        className="shadow-lg rounded-lg p-6 cursor-pointer transform hover:bg-gray-50 min-w-full min-h-full"
         key={props.id}
         onClick={() => openRepoinNewTab("https://www.google.com")} //TODO: Create a blog page using gatsby templates
       >
@@ -18,9 +18,7 @@ export default function blogCard(props) {
           </p>
         </div>
         <div className="py-4 whitespace-pre-wrap">
-          <p className="overflow-ellipsis overflow-hidden">
-            {props.description}
-          </p>
+          <p className="truncate overflow-ellipse">{props.description}</p>
         </div>
         <div className="pt-4 flex-col">
           <div className="my-2 font-sans font-bold items-center w-auto">
