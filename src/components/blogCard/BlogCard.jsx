@@ -1,10 +1,12 @@
 import React from "react";
+import Moment from "moment";
 
 export default function blogCard(props) {
   function openRepoinNewTab(url) {
     var win = window.open(url, "_blank");
     win.focus();
   }
+  Moment.locale("en");
   return (
     <div>
       <div
@@ -22,7 +24,7 @@ export default function blogCard(props) {
         </div>
         <div className="pt-4 flex-col">
           <div className="my-2 font-sans font-bold items-center w-auto">
-            {props.date}
+            {Moment(props.date).format("LLL")}
           </div>
           <div className="my-2">
             {props.categories.map((category) => {

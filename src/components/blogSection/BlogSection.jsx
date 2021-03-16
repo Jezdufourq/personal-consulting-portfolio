@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import SEO from "../seo";
 import BlogCard from "../blogCard/BlogCard";
@@ -7,10 +7,6 @@ import { useBlogQuery } from "../../hooks/useBlogQuery";
 export default function BlogSection({ data }, props) {
   const blogDataArr = useBlogQuery();
 
-  useEffect(() => {
-    console.log(blogDataArr);
-    console.log(blogDataArr.length);
-  });
   return (
     <div id="blogs" className="my-10">
       <SEO
