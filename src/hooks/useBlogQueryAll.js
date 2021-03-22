@@ -1,8 +1,9 @@
 import { useStaticQuery, graphql } from "gatsby";
 
-export const useBlogQuery = () => {
+// Returns all blogs within /content
+const BLOG_QUERY_ALL = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
-    query MyQuery {
+    query BlogQueryAll {
       allMarkdownRemark {
         edges {
           node {

@@ -1,18 +1,18 @@
 import React from "react";
-import Moment from "moment";
+import moment from "moment";
+import { navigate } from "gatsby"; //import navigate from gatsby
 
 export default function blogCard(props) {
   function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+    navigate(url);
   }
-  Moment.locale("en");
+
   return (
     <div>
       <div
         className="shadow-lg rounded-lg p-6 cursor-pointer transform hover:bg-gray-50 min-w-full min-h-full"
         key={props.id}
-        onClick={() => openRepoinNewTab("https://www.google.com")} //TODO: Create a blog page using gatsby templates
+        onClick={() => openRepoinNewTab(props.url)} //TODO: Create a blog page using gatsby templates
       >
         <div className="pb-4 flex items-center">
           <p className="flex items-center font-bold overflow-hidden whitespace-wrap overflow-ellipsis mb-3">
@@ -24,7 +24,7 @@ export default function blogCard(props) {
         </div>
         <div className="pt-4 flex-col">
           <div className="my-2 font-sans font-bold items-center w-auto">
-            {Moment(props.date).format("LLL")}
+            {moment(props.date).format("dddd, MMMM Do YYYY, h:mm:ss a")}
           </div>
           <div className="my-2">
             {props.categories.map((category) => {

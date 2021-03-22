@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 import SEO from "../seo";
 import BlogCard from "../blogCard/BlogCard";
-import { useBlogQuery } from "../../hooks/useBlogQuery";
+import { BLOG_QUERY_LIMIT_3 } from "../../hooks/useBlogQueryLimit3";
 
 export default function BlogSection({ data }, props) {
-  const blogDataArr = useBlogQuery();
+  const blogDataArr = BLOG_QUERY_LIMIT_3();
+  useEffect(() => {
+    console.log(data);
+    console.log(blogDataArr);
+  });
 
   return (
     <div id="blogs" className="my-10">
@@ -49,6 +53,7 @@ export default function BlogSection({ data }, props) {
                 description={description}
                 title={title}
                 date={date}
+                url={blog.node.fields.slug}
                 categories={categories}
               />
             );
@@ -58,3 +63,16 @@ export default function BlogSection({ data }, props) {
     </div>
   );
 }
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        description
+        categories
+        date
+      }
+    }
+  }
+`;
