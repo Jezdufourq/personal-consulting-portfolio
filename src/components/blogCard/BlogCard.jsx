@@ -26,7 +26,7 @@ export default function blogCard(props) {
           <div className="my-2 font-sans font-bold items-center w-auto">
             {moment(props.date).format("dddd, MMMM Do YYYY, h:mm:ss a")}
           </div>
-          <div className="my-2">
+          <div className="my-2 overflow-x-scroll">
             {props.categories.map((category) => {
               return (
                 <span
