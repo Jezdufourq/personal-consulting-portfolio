@@ -20,12 +20,7 @@ export default function ContactForm() {
         </div>
         <div className="mt-8 text-center"></div>
       </div>
-      <form
-        method="post"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
-        name="contact"
-      >
+      <form method="POST" data-netlify="true" name="contact">
         <div>
           <span className="uppercase font-sans text-sm font-bold">
             Full Name
