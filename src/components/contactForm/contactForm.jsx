@@ -20,29 +20,39 @@ export default function ContactForm() {
         </div>
         <div className="mt-8 text-center"></div>
       </div>
-      <form method="POST" data-netlify="true" name="contact">
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/success"
+      >
         <div>
           <span className="uppercase font-sans text-sm font-bold">
             Full Name
           </span>
           <input
             className="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
-            type="text"
-            name="name"
+            type="hidden"
+            value="name"
+            name="contact"
           />
         </div>
         <div className="mt-8">
           <span className="uppercase text-sm font-sans font-bold">Email</span>
           <input
             className="w-full text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
-            type="text"
-            name="email"
+            type="hidden"
+            value="email"
+            name="contact"
           />
         </div>
         <div className="mt-8">
           <span className="uppercase text-s font-sans font-bold">Message</span>
           <textarea
-            name="message"
+            name="contact"
+            type="hidden"
+            value="message"
             className="w-full h-32 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
           ></textarea>
         </div>
