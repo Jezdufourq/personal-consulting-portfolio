@@ -17,7 +17,7 @@ export default function AboutMe() {
           </div>
           <div className="flex-auto col-auto text-center md:mr-20 md:text-left">
             <span className="font-bold font-sans">
-              I am a current final year Software Engineering student and QUT
+              I am a final year Software Engineering Honours student and QUT
               Deans Scholar. I love to design practical solutions to solve
               complex problems.
             </span>
