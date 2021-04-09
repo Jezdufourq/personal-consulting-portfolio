@@ -15,7 +15,10 @@ export default function Success() {
         ]}
         title="ThankYou"
       />
-      <p>This is a thank you page</p>
+      <p>
+        Your details have been recorded successfully! Thank-you for getting in
+        contact.
+      </p>
     </Index>
   );
 }
