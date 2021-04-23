@@ -59,7 +59,7 @@ function Header() {
               title: `Projects`,
             },
             {
-              route: `/blogs`,
+              route: `/#blogs`,
               title: `Blogs`,
             },
           ].map((link) => (
