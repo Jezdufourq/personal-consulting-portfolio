@@ -38,8 +38,7 @@ export default function ContactForm() {
         <div>
           <span className="font-title text-5xl">Let's have a chat</span>
           <div className="mt-8 text-xl font-sans font-bold">
-            Hate forms? Send me an <span className="underline">email</span>{" "}
-            instead. If you are looking for my Resume, please inquire below.
+            If you are looking for my Resume, or would like to get in touch, please use the form.
           </div>
           <div className="pt-4">
             <UndrawEnvelope primaryColor="#2563EB" />
