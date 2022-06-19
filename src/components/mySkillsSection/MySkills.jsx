@@ -4,10 +4,13 @@ import TagCloud from "../TagCloud/TagCloud";
 export default function MySkills() {
   const skills = [
     "Javascript",
+    "Typescript",
     "React",
     "Vue",
     "Java",
     "Docker",
+    "Kubernetes",
+    "Google Cloud",
     "SAP HANA",
     "Postgres",
   ];
@@ -20,10 +23,10 @@ export default function MySkills() {
           </div>
           <div className="flex-auto col-auto text-center md:ml-20 md:text-right">
             <span className="font-bold font-sans">
-              I am proficient in Java, Vue, Quasar and SQL (specifically SAP
-              HANA). I have also completed projects which use Docker, Postgres,
-              Python and C++. My interests lie within Web Applications, Cloud
-              Architectures and Fintech.
+              I am proficient in Typescript, Java, and SQL, and have had
+              experience in Vue and React. I have also completed projects which
+              use Docker, Terraform, Kubernetes, Python and C++. My interests
+              lie within Fintech, Web Applications, Cloud Architectures.
             </span>
           </div>
         </div>
