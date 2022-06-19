@@ -9,8 +9,7 @@ export default function Welcome() {
       <div className="flex flex-wrap overflow-hidden mb-10 mt-32">
         <div className="flex flex-wrap w-full md:pl-4 md:w-1/2">
           <div className="flex-auto col-auto self-end text-center md:text-right">
-            <span className="font-title text-5xl">Hi, </span>
-            <span className="font-title text-5xl">Welcome</span>
+            <span className="font-title text-5xl">Hi! 👋</span>
           </div>
           <div className="flex-auto col-auto text-center md:ml-20 md:text-right">
             <span className="font-bold font-sans">
