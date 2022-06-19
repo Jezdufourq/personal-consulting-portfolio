@@ -14,7 +14,7 @@ export default function ExperienceSection() {
     {
       title: "SAP",
       description:
-        "Currently building an internal web application in Java, SAP HANA, Vue and Quasar hosted on SAP Cloud Platform. Main highlights are migration from monolithic application to a service multitenant architecture.",
+        "Experience building an internal web application in Java, SAP HANA, Vue and Quasar hosted on SAP Cloud Platform. Main highlights were migration from monolithic application to a service multitenant architecture.",
       date: "February, 2020 - October 2021",
       img: require("../../assets/images/sap.png"),
       url: "https://www.sap.com/index.html",
@@ -22,7 +22,7 @@ export default function ExperienceSection() {
     {
       title: "QUT",
       description:
-        "Completed a Bachelor of Engineering (Honours) (Computer and Software Systems Major) with first class honours. Main highlights are Vice Chancellor Scholarship recipient and QUT Deans Scholar recipient.",
+        "Completed a Bachelor of Engineering (Honours) (Computer and Software Systems Major) with first class honours. Main highlights were Vice Chancellor Scholarship recipient and QUT Deans Scholar recipient.",
       date: "February 2017 - November 2020",
       img: require("../../assets/images/qut.jpg"),
       url: "https://www.qut.edu.au/",
