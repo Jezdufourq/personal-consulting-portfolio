@@ -4,26 +4,26 @@ import ExperienceCard from "../experienceCard/ExperienceCard";
 export default function ExperienceSection() {
   const experienceData = [
     {
+      title: "Freetrade",
+      description:
+        "Currently working at Freetrade as a Junior Software Engineer. Working within the Crypto and FX team where we are building services using Typescript and python hosted on Google Cloud with kubernetes cloud functions.",
+      date: "November, 2021 - Present",
+      img: require("../../assets/images/freetrade.png"),
+      url: "https://freetrade.io/",
+    },
+    {
       title: "SAP",
       description:
         "Currently building an internal web application in Java, SAP HANA, Vue and Quasar hosted on SAP Cloud Platform. Main highlights are migration from monolithic application to a service multitenant architecture.",
-      date: "February, 2020 - Current",
+      date: "February, 2020 - October 2021",
       img: require("../../assets/images/sap.png"),
       url: "https://www.sap.com/index.html",
     },
     {
-      title: "NOJA Power",
-      description:
-        "Had experience as an Engineering cadet, rotating through R&D, Production Engineering and Q&A. Main highlights were building an automation testing suite using Python and C# and developing prototypes of a web application.",
-      date: "January, 2017 - January, 2021",
-      img: require("../../assets/images/noja.png"),
-      url: "https://www.nojapower.com.au/",
-    },
-    {
       title: "QUT",
       description:
-        "Currently enrolled as a Final Year Student, studying a Bachelor of Engineering (Honours) majoring in Computer and Software Systems. Main highlights are Vice Chancellor Scholarship recipient and current QUT Deans Scholar. I am currently volunteering with the Deans Scholars within the SEADS committee.",
-      date: "February 2017 - Current",
+        "Completed a Bachelor of Engineering (Honours) (Computer and Software Systems Major) with first class honours. Main highlights are Vice Chancellor Scholarship recipient and QUT Deans Scholar recipient.",
+      date: "February 2017 - November 2020",
       img: require("../../assets/images/qut.jpg"),
       url: "https://www.qut.edu.au/",
     },
